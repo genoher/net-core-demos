@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace Webix.WFS.Local {
+namespace WebixDhtmlxDemos.WFS.Local {
 
 	// FsObject stores info about single file
 	public class FsObject {

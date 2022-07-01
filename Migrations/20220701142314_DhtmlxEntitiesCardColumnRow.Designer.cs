@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebixDhtmlxDemos;
 
@@ -10,9 +11,10 @@ using WebixDhtmlxDemos;
 namespace WebixDhtmlxDemos.Migrations
 {
     [DbContext(typeof(DemosDbContext))]
-    partial class DemosContextModelSnapshot : ModelSnapshot
+    [Migration("20220701142314_DhtmlxEntitiesCardColumnRow")]
+    partial class DhtmlxEntitiesCardColumnRow
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.6");
@@ -256,7 +258,7 @@ namespace WebixDhtmlxDemos.Migrations
                     b.HasOne("WebixDhtmlxDemos.Models.Dhtmlx.Card", "Card")
                         .WithMany("Attachments")
                         .HasForeignKey("CardId")
-                        .OnDelete(DeleteBehavior.NoAction);
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Card");
                 });
@@ -266,12 +268,12 @@ namespace WebixDhtmlxDemos.Migrations
                     b.HasOne("WebixDhtmlxDemos.Models.Dhtmlx.Card", "Card")
                         .WithMany("CardUsers")
                         .HasForeignKey("CardId")
-                        .OnDelete(DeleteBehavior.NoAction);
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("WebixDhtmlxDemos.Models.Dhtmlx.User", "User")
                         .WithMany("CardUsers")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction);
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Card");
 

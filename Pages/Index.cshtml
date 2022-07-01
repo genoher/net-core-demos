@@ -9,6 +9,7 @@
         font-size: 16px;
         padding: 20px;
     }
+
     li {
         margin-bottom: 10px;
     }
@@ -16,43 +17,37 @@
         color: #44e;
         text-decoration: none;
     }
+
+    .container {
+      margin:0 auto;
+      width: 100%-15px;      
+      padding:0 15px;
+    }
+
+    .container .col {
+        width: 50%-15px;
+        padding:0 15px;
+      /*background:lightblue;*/
+    }
+
+    .container .col p {
+      /*padding: .25rem .75rem;*/
+    }  
+
 </style>
 
-<h2>Demos</h2>
+<div class="container">
 
-<h3>File Manager</h3>
-<ul>
-    <li><a href="./FileManager">Default mode</a></li>
-    <li><a href="./DynamicFiles">Loading file info dynamically</a></li>
-    <li><a href="./DynamicFolders">Loading sub-folders dynamically</a></li>
-</ul>
+    <h3>Kanban DHTMLx</h3>
+    <ul>
+        <li><a href="./Dhtmlx/Kanban">Default mode</a></li>
+    </ul>
+    
+    <h3>Kanban Webix</h3>
+    <ul>
+        <li><a href="./Webix/Kanban">Default mode</a></li>
+    </ul>
 
-
-<h3>Spreadsheet</h3>
-<ul>
-    <li><a href="./Spreadsheet">Default mode</a></li>
-</ul>
-
+</div>
 
 
-<h3>Kanban</h3>
-<ul>
-    <li><a href="./Kanban">Default mode</a></li>
-</ul>
-
-
-
-<h3>Scheduler</h3>
-<ul>
-    <li><a href="./Scheduler">Default mode</a></li>
-</ul>
-
-
-
-<h3>Webix Core</h3>
-<ul>
-    <li><a href="./WebixGrid">Editable Grid</a></li>
-    <li><a href="./WebixForm">List and Form</a></li>
-    <li><a href="./WebixGridDynamic">Grid with dynamic loading</a></li>
-    <li><a href="./WebixUploader">File uploading</a></li>
-</ul>

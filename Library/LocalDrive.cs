@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
-namespace Webix.WFS.Local {
+namespace WebixDhtmlxDemos.WFS.Local {
 
 	// LocalDrive  represents the file folder on local drive
 	// due to ForceRootPolicy all operations outside of the root folder will be blocked

@@ -4,11 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebixDemos;
 
-namespace WebixDemos.Migrations
+namespace WebixDhtmlxDemos.Migrations
 {
-    [DbContext(typeof(DemosContext))]
+    [DbContext(typeof(DemosDbContext))]
     [Migration("20190626105251_InitialCreate")]
     partial class InitialCreate
     {

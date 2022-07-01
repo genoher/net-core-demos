@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WebixDemos.Migrations
+namespace WebixDhtmlxDemos.Migrations
 {
     public partial class InitialCreate : Migration
     {

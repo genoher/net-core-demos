@@ -1,7 +1,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-namespace Webix.WFS.Local {
+namespace WebixDhtmlxDemos.WFS.Local {
 
 	public interface IPolicy {
 		bool Comply(string path, Operation operation);

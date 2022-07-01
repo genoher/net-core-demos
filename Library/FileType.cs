@@ -1,7 +1,8 @@
-namespace Webix.WFS.Local {
+namespace WebixDhtmlxDemos.WFS.Local {
 
-    class FileType {
-        public static string GetType(string ext){
+    public class FileType {
+        public static string GetType(string ext) 
+        {
             if (ext.Length > 0)
                 ext = ext.Substring(1);
 
